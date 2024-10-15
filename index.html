@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Hi, I'm Lokesh</h1>
+        <p>A full-stack web developer passionate about creating interactive, high-performance web applications.</p>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm Lokesh, a recent Master of Computer Applications (MCA) graduate with a strong passion for full-stack development. I am focused on building dynamic and interactive web applications using modern technologies. My goal is to craft seamless, user-centric digital experiences by mastering both front-end and back-end development. I'm eager to learn, grow, and contribute to innovative projects.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <!-- Repeat for each project -->
+            <div class="project">
+                
+                <h3>Development of Privacy Enhanced-GPT</h3>
+                <p>In this project, I developed a privacy-enhanced version of the GPT model using Python and Streamlit. The application focuses on safeguarding user data while providing intelligent and context-aware text generation. By implementing advanced privacy measures, such as local data processing and secure user authentication, I ensured that sensitive information remains protected. The Streamlit interface allows for an interactive and user-friendly experience, making it easy to engage with the model while maintaining privacy standards.</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                
+                <h3>Project Title 2</h3>
+                <p>Description of Project 2.</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+            <!-- Add more projects here -->
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>MCA</strong>, Srinivas Institue of Technology,Mangaluru, [CGPA] : 7.4</li>
+            <li><strong>BCA</strong>, Shree Guru Sudhindra College Bhatkal,[CGPA] : 6.8</li>
+
+        </ul>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skill-grid">
+            <div class="skill">HTML/CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Python</div>
+            <div class="skill">React.js</div>
+            <div class="skill">Node.js</div>
+            <div class="skill">Git/GitHub</div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="hobbies">
+        <h2>Hobbies</h2>
+        <p>I enjoy writing stories, reading books, and watching cinema, which keeps me inspired and creative as a developer</p>
+    </section>
+        <!--certificate -->
+        <section id="certificates" class="certificates">
+            <h2>Certificate</h2>
+            
+        </section>
+    
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 lokesh. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

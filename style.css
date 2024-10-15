@@ -1,0 +1,244 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #d4d4d4;
+    color: #333;
+}
+
+h1, h2 {
+    color: #050404;
+    }
+
+/* Header */
+header {
+    background-color: #325254;
+    padding: 1rem 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #c89ea4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #b69592;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 5rem 1rem;
+    background-color: #da6d63;
+    color: #fff;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.hero p {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    color: #123e42;
+}
+
+/* About Section */
+.about {
+    padding: 4rem 1rem;
+    background-color: #fff;
+    text-align: center;
+    animation: slideUp 1.5s ease-in-out;
+    
+    
+}
+
+.about h2 {
+    margin-bottom: 1.5rem; /* Adds space below the heading */
+    color: rgb(29, 127, 94);
+}
+
+.about p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #123e42;
+}
+/* Projects Section */
+.projects {
+    padding: 4rem 1rem;
+    background-color: #f4f4f9;
+    text-align: center;
+  
+}
+.projects h2 {
+    margin-bottom: 1.5rem; /* Adds space below the heading */
+    color: rgb(29, 127, 94);
+}
+
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.project h3 {
+    margin: 1rem 0;
+}
+
+.project a {
+    text-decoration: none;
+    color: #ff6f61;
+    font-weight: bold;
+}
+
+/* Education Section */
+.education {
+    padding: 4rem 1rem;
+    background-color: #fff;
+    text-align: center;
+    animation: slideUp 1.5s ease-in-out;
+}
+.education h2{
+    margin: 1rem 0;
+    color: rgb(29, 127, 94);
+}
+
+.education ul {
+    list-style: none;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.education ul li {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+/* Skills Section */
+.skills {
+    padding: 4rem 1rem;
+    background-color: #f4f4f9;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+.skills h2{
+    margin: 1rem 0;
+    color: rgb(29, 127, 94);
+}
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1.5rem;
+    text-align: center;
+    align-items: center;
+}
+
+.skill {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+}
+
+/* Hobbies Section */
+.hobbies {
+    padding: 4rem 1rem;
+    background-color: #fff;
+    text-align: center;
+    animation: slideUp 1.5s ease-in-out;
+
+}
+.certificates{
+    text-align: center;
+    background-color: ;
+}
+/* Contact Section */
+.contact {
+    padding: 4rem 1rem;
+    background-color: #f4f4f9;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form label {
+    margin-bottom: 0.5rem;
+}
+
+.contact form input, .contact form textarea {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact form button {
+    padding: 0.75rem;
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.contact form button:hover {
+    background-color: #e65b4f;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9rem;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
